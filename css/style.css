@@ -1,6 +1,7 @@
 html, body { width: 100%; min-height: 100%; }
 body { margin: 0; font-family: system-ui, -apple-system, "Segoe UI", Arial, sans-serif; color: #212529; overflow-x: hidden; }
 main, section, header, footer { width: 100%; }
+section {flex: 1;}
 .navbar .container-fluid { width: 100%; }
 .hero-carousel .carousel-item img { height: clamp(360px, 58vh, 650px); object-fit: cover; }
 .caption-box { display: inline-block; max-width: min(700px, 90vw); padding: 1rem 1.25rem; border-radius: 1rem; background: rgba(0,0,0,.55); backdrop-filter: blur(2px); }
