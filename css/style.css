@@ -1,0 +1,146 @@
+html, body { width: 100%; min-height: 100%; }
+body { margin: 0; font-family: system-ui, -apple-system, "Segoe UI", Arial, sans-serif; color: #212529; overflow-x: hidden; }
+main, section, header, footer { width: 100%; }
+.navbar .container-fluid { width: 100%; }
+.hero-carousel .carousel-item img { height: clamp(360px, 58vh, 650px); object-fit: cover; }
+.caption-box { display: inline-block; max-width: min(700px, 90vw); padding: 1rem 1.25rem; border-radius: 1rem; background: rgba(0,0,0,.55); backdrop-filter: blur(2px); }
+.carousel-caption { bottom: 12%; }
+.service-box, .destination-card, .package-card, .form-card, .contact-info { transition: transform .2s ease, box-shadow .2s ease; }
+.service-box:hover, .destination-card:hover, .package-card:hover { transform: translateY(-5px); }
+.destination-card img { height: 240px; object-fit: cover; }
+.page-header { background: linear-gradient(135deg, #f8f9fa, #e9f5ff); border-bottom: 1px solid #dee2e6; }
+.package-card { border: 0; }
+.form-card { background: #fff; max-width: 1000px; }
+.contact-info { background: #f8f9fa; }
+.auth-section { min-height: calc(100vh - 140px); display: flex; align-items: center; }
+.form-control, .form-select { min-height: 46px; }
+.btn { border-radius: .65rem; }
+footer { margin-top: auto; }
+@media (max-width: 767.98px) {
+    .hero-carousel .carousel-item img { height: 420px; }
+    .carousel-caption { bottom: 8%; left: 5%; right: 5%; }
+    .caption-box h1 { font-size: 1.55rem; }
+    .caption-box p { font-size: .95rem; }
+    .destination-card img { height: 220px; }
+}
+@media (min-width: 1400px) {
+    .container-fluid.px-lg-5 { padding-left: 4rem !important; padding-right: 4rem !important; }
+}
+
+/* Travel Packages page */
+.packages-heading {
+    background: #f8f9fa;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.packages-heading h1 {
+    color: #212529;
+}
+
+.package-row {
+    align-items: stretch;
+}
+
+.package-detail-card {
+    background: #fff;
+    min-width: 0;
+    transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.package-detail-card:hover {
+    transform: translateY(-5px);
+}
+
+.package-image {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.package-badge {
+    font-size: .82rem;
+    padding: .42rem .65rem;
+    border-radius: .45rem;
+}
+
+.rating {
+    color: #6c757d;
+    white-space: nowrap;
+    font-size: .95rem;
+}
+
+.rating i {
+    color: #ffb000;
+    margin-right: .2rem;
+}
+
+.package-title {
+    font-size: 1.28rem;
+    font-weight: 700;
+    margin: .15rem 0 .45rem;
+}
+
+.package-description {
+    color: #6c757d;
+    line-height: 1.55;
+    margin-bottom: 1rem;
+}
+
+.package-features {
+    color: #5c6570;
+    line-height: 1.75;
+}
+
+.package-features li {
+    display: flex;
+    align-items: flex-start;
+    gap: .55rem;
+}
+
+.package-features i {
+    color: #198754;
+    margin-top: .3rem;
+}
+
+.package-bottom {
+    padding-top: .75rem;
+}
+
+.package-price {
+    color: #198754;
+    font-size: 1.55rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.book-btn {
+    min-width: 136px;
+    font-weight: 600;
+    padding: .62rem 1.25rem;
+    border-radius: .65rem;
+}
+
+@media (max-width: 767.98px) {
+    .packages-heading {
+        padding-top: 3rem !important;
+        padding-bottom: 3rem !important;
+    }
+
+    .packages-heading h1 {
+        font-size: 2.25rem;
+    }
+
+    .package-image {
+        height: 230px;
+    }
+
+    .package-title {
+        font-size: 1.2rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1199.98px) {
+    .package-image {
+        height: 220px;
+    }
+}
