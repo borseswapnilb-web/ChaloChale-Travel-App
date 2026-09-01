@@ -16,7 +16,7 @@ section {flex: 1;}
 .auth-section { min-height: calc(100vh - 140px); display: flex; align-items: center; }
 .form-control, .form-select { min-height: 46px; }
 .btn { border-radius: .65rem; }
-footer { margin-top: auto; }
+footer { margin-top: auto; bottom: 0; left: 0; width: 100%;}
 @media (max-width: 767.98px) {
     .hero-carousel .carousel-item img { height: 420px; }
     .carousel-caption { bottom: 8%; left: 5%; right: 5%; }
